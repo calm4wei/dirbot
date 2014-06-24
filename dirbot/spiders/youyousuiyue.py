@@ -37,8 +37,9 @@ class YouyousuiyueSpider(Spider):
             print item['title'][0]
             item['url'] = title.xpath('@href').extract()
             item['content'] = d.xpath('div[@class="entry-content"]/div/text()').extract()
-            items.append(item)
-        return items
+            yield item
+            #items.append(item)
+        #return items
 
     def parse(self, response):
         """
