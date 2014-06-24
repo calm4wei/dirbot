@@ -15,3 +15,8 @@ class Person(Item):
     name = Field()
     url = Field()
     description = Field()
+
+class Article(Item):
+    title = Field()
+    url = Field()
+    content = Field()
