@@ -30,16 +30,14 @@ class YouyousuiyueSpider(Spider):
         articles = sel.xpath('//div[@id="content"]/article')
         print 'len(articles)=', len(articles)
         
-        for d in articles:
-            item = Article()
-            title = d.xpath('header/h1/a')
-            item['title'] = title.xpath('text()').extract()
-            print item['title'][0]
-            item['url'] = title.xpath('@href').extract()
-            item['content'] = d.xpath('div[@class="entry-content"]/div/text()').extract()
-            yield item
-            #items.append(item)
-        #return items
+        d = articles[0]
+        item = Article()
+        title = d.xpath('header/h1/a')
+        item['title'] = title.xpath('text()').extract()
+        print item['title'][0]
+        item['url'] = title.xpath('@href').extract()
+        item['content'] = d.xpath('div[@class="entry-content"]/div/text()').extract()
+        return item
 
     def parse(self, response):
         """
