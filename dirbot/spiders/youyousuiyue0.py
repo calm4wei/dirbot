@@ -9,7 +9,7 @@ import string
 from scrapy.http import Request
 
 class YouyousuiyueSpider(Spider):
-    name = "youyousuiyue"
+    name = "youyousuiyue0"
     allowed_domains = ["youyousuiyue.sinaapp.com"]
     
     start_urls = [
@@ -28,7 +28,6 @@ class YouyousuiyueSpider(Spider):
         items = []
 
         articles = sel.xpath('//div[@id="content"]/article')
-        print 'len(articles)=', len(articles)
         
         for d in articles:
             item = Article()
@@ -50,7 +49,7 @@ class YouyousuiyueSpider(Spider):
         """
         
         print 'parsing ', response.url
-        yield self.parse_item(response)
+        yield Request(response.url, callback=self.parse_item)
 
         sel = Selector(response)
         link = sel.xpath('//div[@class="nav-previous"]/a/@href').extract()[0]
