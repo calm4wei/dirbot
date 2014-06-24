@@ -25,7 +25,7 @@ class YouyousuiyueSpider(Spider):
         @scrapes name
         """
         sel = Selector(response)
-        items = []
+        #items = []
 
         articles = sel.xpath('//div[@id="content"]/article')
         print 'len(articles)=', len(articles)
