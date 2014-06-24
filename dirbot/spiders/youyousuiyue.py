@@ -16,21 +16,7 @@ class YouyousuiyueSpider(Spider):
         'http://youyousuiyue.sinaapp.com',
     ]
         
-    def parse_item(self, response):
-        """
-        The lines below is a spider contract. For more info see:
-        http://doc.scrapy.org/en/latest/topics/contracts.html
-
-        @url http://youyousuiyue.sinaapp.com
-        @scrapes name
-        """
-        sel = Selector(response)
-        #items = []
-
-        articles = sel.xpath('//div[@id="content"]/article')
-        print 'len(articles)=', len(articles)
-        
-        d = articles[0]
+    def load_item(self, d):
         item = Article()
         title = d.xpath('header/h1/a')
         item['title'] = title.xpath('text()').extract()
@@ -49,7 +35,10 @@ class YouyousuiyueSpider(Spider):
         """
         
         print 'parsing ', response.url
-        yield self.parse_item(response)
+        sel = Selector(response)
+        articles = sel.xpath('//div[@id="content"]/article')
+        for d in articles:
+            yield self.load_item(d)
 
         sel = Selector(response)
         link = sel.xpath('//div[@class="nav-previous"]/a/@href').extract()[0]
