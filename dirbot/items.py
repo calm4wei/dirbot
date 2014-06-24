@@ -20,3 +20,10 @@ class Article(Item):
     title = Field()
     url = Field()
     content = Field()
+
+class bbsItem(Item):
+    link = Field()
+    title = Field()
+    author = Field()
+    board = Field()
+    time = Field()

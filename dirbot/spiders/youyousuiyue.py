@@ -33,6 +33,7 @@ class YouyousuiyueSpider(Spider):
             item = Article()
             title = d.xpath('header/h1/a')
             item['title'] = title.xpath('text()').extract()
+            print item['title'][0]
             item['url'] = title.xpath('@href').extract()
             item['content'] = d.xpath('div[@class="entry-content"]/div/text()').extract()
             items.append(item)
@@ -46,13 +47,14 @@ class YouyousuiyueSpider(Spider):
         @url http://youyousuiyue.sinaapp.com
         @scrapes name
         """
-        sel = Selector(response)
-        items = []
+        
+        print 'parsing ', response.url
+        yield Request(response.url, callback=self.parse_item)
 
+        sel = Selector(response)
         link = sel.xpath('//div[@class="nav-previous"]/a/@href').extract()[0]
-        print 'link-->', link
         if link[-1] == '4':
-            yield None
+            return
         else:
-            print 'yielding...'
-            yield Request(link, callback=self.parse_item)
+            print 'yielding ', link
+            yield Request(link, callback=self.parse)
