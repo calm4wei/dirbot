@@ -11,8 +11,25 @@
   
 	<script type="text/javascript">
 		    $(function(){
-            $('#tt').datagrid({loadFilter:pagerFilter}).datagrid();
+            $('#tt').datagrid({loadFilter:pagerFilter}).datagrid(
+            {
+            	onClickRow: rowClick,
+            	columns:[[
+				        {field:'name',title:'name',width:180,sortable:true,sorter:mysort},
+				        {field:'url',title:'url',width:680,sortable:true,align:'center',formatter:formatUrl}
+    					]]
+            }
+            );
         });
+  
+  function rowClick(rowIndex, rowData) {
+  	alert(rowData.description);
+  }
+  
+  function formatUrl(val, row){
+      var url = val
+      return '<a href="' + url +'" target="_blank">' + decodeURI(val) + '</a>';
+  }
 
 	function doSearch(){
     $('#tt').datagrid({searchValue: $('#search_name').val()});
@@ -85,8 +102,6 @@
 			remoteSort="false">
 		<thead>
 			<tr>
-				<th field="name" width="180" align="right" sortable="true" sorter="mysort">name</th>
-				<th field="url" width="680" align="right">url</th>
 			</tr>
 		</thead>
 	</table>
