@@ -15,6 +15,7 @@ print len(names)
 persons1 = {}
 for n in names:
     n = n.strip().decode('utf-8')
+    print n
     persons1[n] = persons[n]
 
 print len(persons1)
