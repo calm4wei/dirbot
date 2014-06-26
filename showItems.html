@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="jquery,ui,easy,easyui,web">
+	<meta name="description" content="easyui help you build your web page easily!">
+	<title>jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+  
+	<script type="text/javascript">
+		    $(function(){
+            $('#tt').datagrid({loadFilter:pagerFilter}).datagrid();
+        });
+
+	function doSearch(){
+    $('#tt').datagrid({searchValue: $('#search_name').val()});
+  }
+  
+       function mysort(a,b){
+				   return (a > b ? 1 : -1);
+       }
+
+        function pagerFilter(data){
+            if (typeof data.length == 'number' && typeof data.splice == 'function'){
+                data = {
+                    total: data.length,
+                    rows: data,
+                    originalTotal: data.length
+                }
+            }
+            var dg = $(this);
+            
+            var opts = dg.datagrid('options');
+            
+            if (!data.originalRows){
+                data.originalRows = (data.rows);
+            }
+
+            if (opts.searchValue) {
+            	data.currOriginalRows = [];
+            	for (var k in data.originalRows) {
+            		row = data.originalRows[k];
+            		if(row.name.match(opts.searchValue)) {
+            			data.currOriginalRows.push(row);
+            		}
+            	}
+            	data.total = data.currOriginalRows.length;
+            	data.originalTotal;
+            }
+            else {
+            	data.currOriginalRows = data.originalRows;
+            	data.total = data.originalTotal;
+            }
+            
+            var pager = dg.datagrid('getPager');
+            pager.pagination({
+                onSelectPage:function(pageNum, pageSize){
+                    opts.pageNumber = pageNum;
+                    opts.pageSize = pageSize;
+                    pager.pagination('refresh',{
+                        pageNumber:pageNum,
+                        pageSize:pageSize
+                    });
+                    dg.datagrid('loadData',data);
+                }
+            });
+
+            var start = (opts.pageNumber-1)*parseInt(opts.pageSize);
+            var end = start + parseInt(opts.pageSize);
+            data.rows = (data.currOriginalRows.slice(start, end));
+            return data;
+        }
+
+  </script>
+</head>
+<body>
+	<h1>DataGrid</h1>
+	
+	<table id="tt" title="Column Group" class="easyui-datagrid" style="width:1060px;height:390px"
+			url="items7.json"
+			singleSelect="true" iconCls="icon-save" rownumbers="true" pagination="true"
+			toolbar="#tb"
+			remoteSort="false">
+		<thead>
+			<tr>
+				<th field="name" width="180" align="right" sortable="true" sorter="mysort">name</th>
+				<th field="url" width="680" align="right">url</th>
+			</tr>
+		</thead>
+	</table>
+	
+	<div id="tb" style="padding:3px">
+    <span>name</span>
+    <input id="search_name" style="line-height:26px;border:1px solid #ccc">
+    <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">Search</a>
+  </div>
+	
+</body>
+</html>
