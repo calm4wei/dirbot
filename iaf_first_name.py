@@ -16,7 +16,7 @@ for p in persons:
 
 fnMap = {}
 for p in persons:
-    n = p.decode('utf-8')
+    n = p.strip().decode('utf-8')
     mo = re.match(u'^([^·]*)·.*$', n)
     
     if mo:
@@ -28,11 +28,11 @@ for p in persons:
 
         print fn, len(fnMap[fn])
 
-persons = json.dump(fnMap, file('iaf_first_names.json', 'w'))
+json.dump(fnMap, file('iaf_first_names.json', 'w'))
 
 #p1 = {}
 #for k in fnMap.keys():
 #    if len(fnMap[k]) == 1:
 #        p1[k] = fnMap[k][0]
 
-#persons = json.dump(p1, file('iaf_unique_names.json', 'w'))
+#json.dump(p1, file('iaf_unique_names.json', 'w'))
