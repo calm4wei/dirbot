@@ -64,7 +64,7 @@ class IafwikiSpider(Spider):
                     if t_url[:7] == '/wiki/%' and not re.match(u'^.*((\))|(\()|(《)|(》)|(船只)|(沙箱)|(规范)|(信条)|(维基)|(名片)|(版权)|(军备)|(药品)|(百科)|(严肃)|(方针)|(管理)|(申请)|(指南)|(/)|(\.\.\.)|(的)|(第[一二三四五六七八九十])).*$', n):
                         if not re.match(u'^.*((号)|(集))$', n):
                             item = Person()
-                            item['name'] = n
+                            item['nick'] = n
                             item['url'] = self.url0 + t_url
                             print '.', #'yielding and parsing ', item['url']
                             yield Request(item['url'], meta={'item':item}, callback=self.parse_item);

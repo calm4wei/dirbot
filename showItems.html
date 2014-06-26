@@ -59,7 +59,7 @@
             	data.currOriginalRows = [];
             	for (var k in data.originalRows) {
             		row = data.originalRows[k];
-            		if(row.name.match(opts.searchValue)) {
+            		if(row.name.match(opts.searchValue) || (typeof(row.nick) != "undefined" && row.nick.match(opts.searchValue))) {
             			data.currOriginalRows.push(row);
             		}
             	}

@@ -12,6 +12,7 @@ class PersonLink(Item):
     url = Field()
 
 class Person(Item):
+    nick = Field()
     name = Field()
     url = Field()
     description = Field()
