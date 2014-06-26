@@ -21,7 +21,11 @@ for p in persons:
         else:
             lnMap[ln] = [n]
 
-        print ln, len(lnMap[ln])
+fout = file('en_last_name_count.txt', 'w')
+for ln in lnMap.keys():
+	s = '%s\t%d' %(ln, len(lnMap[ln]))
+	print s
+	fout.write(s + '\n')
 
 json.dump(lnMap, file('iaf_en_last_names.json', 'w'))
 print len(lnMap)
