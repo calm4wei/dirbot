@@ -9,11 +9,6 @@ f = file('iaf_names.txt', 'r')
 persons = f.readlines()
 f.close()
 
-persons = list(set(persons)) # make it unique
-f = file('iaf_names1.txt', 'w')
-for p in persons:
-    f.write(p)
-
 fnMap = {}
 for p in persons:
     n = p.strip().decode('utf-8')
