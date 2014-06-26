@@ -7,39 +7,32 @@ import sys
 
 f = file('iaf_names.txt', 'r')
 persons = f.readlines()
+f.close()
+
+persons = list(set(persons)) # make it unique
+f = file('iaf_names1.txt', 'w')
+for p in persons:
+    f.write(p)
+
 fnMap = {}
 for p in persons:
     n = p.decode('utf-8')
-    mo = re.match(u'^(.*)·.*$', n)
+    mo = re.match(u'^([^·]*)·.*$', n)
     
-    if fnMap.has_key(u'珊莎'):
-        print '-------->', fnMap[u'珊莎']
-        
     if mo:
         fn = mo.group(1)
         if fnMap.has_key(fn):
-            if fnMap[fn]:
-                fnMap[fn] = fnMap[fn].append(n)
-            else:
-                print 'bad', fn, fnMap[fn]
-                fnMap[fn] = [n]
-                sys.exit(1)
+            fnMap[fn].append(n)
         else:
-            print 'adding ', fn
             fnMap[fn] = [n]
-            #print fnMap[fn]
 
-        if fnMap.has_key(fn):
-            if fnMap[fn]:pass
-                #print fn, len(fnMap[fn])
-            else:
-                print 'bad: ', fn
-                print '-------->', fnMap[u'珊莎']
-                sys.exit(1)
+        print fn, len(fnMap[fn])
 
-p1 = {}
-for k in fnMap.keys():
-    if len(fnMap[k]) == 1:
-        p1[k] = fnMap[k][0]
+persons = json.dump(fnMap, file('iaf_first_names.json', 'w'))
 
-persons = json.dump(p1, file('iaf_unique_names.json', 'w'))
+#p1 = {}
+#for k in fnMap.keys():
+#    if len(fnMap[k]) == 1:
+#        p1[k] = fnMap[k][0]
+
+#persons = json.dump(p1, file('iaf_unique_names.json', 'w'))
