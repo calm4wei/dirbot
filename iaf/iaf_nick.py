@@ -18,7 +18,7 @@ for k in nicks:
         for nick in nn:
             nick = nick.strip()
             personMap1[nick] = n
-            print nick, n
+            print nick.encode('gbk'), n.encode('gbk')
 
 f = file('iaf_nick.json', 'w')
 json.dump(personMap1, f)
