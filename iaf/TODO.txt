@@ -1,18 +1,7 @@
 中英姓、名对照
 姓、名统计
 
-这些词不符合规则
-事实上：key 应该全部用大写，并把连续空白合并
 显示用原有大小写
-hollow hill
-moon blood
-the Blessed
-the Bone Hand
-the Old Falcon
-the Old Hawk
-the Old King
-the Titan's Bastard
-warg
-moon blood
 
-带世的姓，合并
+提取昵称，封号
+封号多对多
