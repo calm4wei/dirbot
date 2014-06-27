@@ -5,11 +5,11 @@ import json
 import re
 import sys
 
-f = file('iaf_en_names_clean.json', 'r')
+f = file('iaf_en_names1.json', 'r')
 persons = json.load(f)
 f.close()
 
-fout = file('iaf_en_names.txt', 'w')
+fout = file('iaf_en_names1.txt', 'w')
 names = persons.keys()
 names.sort()
 for p in names:
