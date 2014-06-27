@@ -1,0 +1,316 @@
+
+
+--------------------------
+en:
+Unsullied 无垢者
+Faceless Men 无面者
+Kingsguard 御林铁卫
+Others 异鬼
+Wight 尸鬼
+
+Tyrion Lannister(Imp)提利昂．兰尼斯特(小恶魔) 
+Ser Bronn波隆爵士 
+Podrick Payne(Pod)波德瑞克．派恩(波德) 
+Lord Tywin Lannister泰温．兰尼斯特公爵 
+Ser Addam Marbrand亚当．马尔布兰爵士 
+Ser Meryn Trant马林．特兰爵士 
+Ser Osmund Kettleblack奥斯慕．凯特布雷克爵士 
+
+Queen Cersei瑟曦太后 
+Ser Mandon Moore曼登．穆尔爵士 
+Hound猎狗 
+Ser Jacelyn Bywater(Ironhand)杰斯林．拜瓦特爵士(铁手) 
+King Joffery乔佛里国王 
+Osney奥斯尼 
+Osfryd奥斯弗德 
+Jaime詹姆 
+Shagga夏嘎 
+Timett提魅 
+Chella齐拉 
+Alayaya(Yaya)爱拉雅雅(雅雅) 
+Shae雪伊 
+Tommen托曼 
+Stannis史坦尼斯 
+Renly蓝礼 
+Robb Stark(Young Wolf)罗柏．史塔克(少狼主) 
+Lord Tarly塔利伯爵 
+Ser Kevan凯冯爵士 
+Margaery Tyrell玛格丽．提利尔 
+Maester Frenken法仁肯学士 
+Lord Rowan罗宛大人 
+Lord Redwyne雷德温大人 
+Lord Baelish(Littlefinger)贝里席大人(小指头) 
+Tyrek提瑞克 
+Tygerr提盖特 
+Lady Ermesande艾弥珊德伯爵小姐 
+Hayford海佛德 
+Maester Ballabar巴拉巴尔学士 
+Helman Tallhard赫曼．陶哈 
+Robbet Clover罗贝特．葛洛佛 
+Ser Gregor Clegane格雷果．克里冈爵士 
+Roose Bolton卢斯．波顿 
+Aerys伊里斯 
+Baratheon拜拉席恩 
+Myrcella弥赛拉 
+Ser Arys Oakheart亚历斯．奥克赫特爵士 
+Princess Arianne爱瑞安公主 
+Prince Trystane崔斯丹亲王 
+Martell马泰尔 
+Prince Doran道朗亲王 
+Tysha泰莎 
+
+
+Catelyn 凯特琳
+Eddard　艾德
+Arya　　艾莉亚
+Brandon(Bran) 布兰登（布兰）
+Rickon 瑞肯
+Sansa 　珊莎
+Maester Luwin 鲁温学士
+Jon Snow 琼恩　雪诺
+Samwell Tarly 山姆威尔　塔利
+Jeor Mormont 杰奥　莫尔蒙
+Qhorin Halfhand 科林　断掌
+Benjen Stark 班扬　史塔克
+Maester Aemon　伊蒙学士
+Robert 劳勃
+Melisandre　梅莉珊卓
+Davos Seaworth 戴佛斯　席渥斯
+Varys 瓦里斯
+Brienne of Tarth 塔斯的布蕾妮
+Sandor Clegane 桑铎　克里冈
+Lysa Arryn 莱莎　艾林
+Loras Tyrell 洛拉斯　提利尔
+Margaery Tyrell 玛格利　提利尔
+Olenna Tyrell 奥莲娜　提利尔
+Mace　Tyrell　梅斯　提利尔 
+High Septon大主教 
+Kingsguard(White Swords)御林铁卫(白剑士) 
+City Watch都城守备队 
+Stone Crows石鸦部 
+Burned Men灼人部 
+Black Ears黑耳部 
+Lyseni里斯人 
+seven hells七层地狱 
+Hand首相 
+pyromancer火术士 
+wildfire烧夷剂 
+clansmen高山部族
+
+ 
+
+部分地名对照：
+
+
+Maegor's Holdfast梅葛樓
+Blackwater黑水河
+Tower of the Hand首相塔
+Casterly Rock凱岩城
+Red Keep紅堡
+kingswood御林
+River Gate臨河門
+Rosby羅斯比城
+Duskendale暮門堡
+King's Landing君臨
+Highgarden高庭
+Seven Kingdoms七國
+Dragonstone龍石島
+kingsroad國王大道
+Harrenhal赫倫堡
+Sunspear陽戟城
+Green Fork綠叉河
+
+
+THE FROZEN SHORE 冰封海岸
+BAY OF ICE 寒冰湾
+BEAR’S ISLAND 熊岛
+SEA DRAGON POINT 海龙角
+DEEPWOOD MOTTE 深林堡
+WOLFSWOOD 狼林
+THE HAUNTED FORSET 鬼影森林
+THE WALL 绝境长城
+SHADOW TOWER 影子塔
+CASTLE BLACK 黑城堡
+EASTWATCH-BY-THE-SEA 东海望
+LAST HEARTH 最后壁炉城
+SKAGOS 斯卡格斯岛
+QUEEN’S CROWN 后冠镇
+KARHOLD 卡霍城
+THE DREADFORT 恐怖堡
+THE LAST RIVER 末江
+THE KING’S ROAD 国王大道
+LONG LAKE 长湖
+WINTERFALL 临冬城
+TORRHEN’S SQUARE 托伦方城
+BARROWLANDS 先民荒冢
+THE RILLS 溪流地
+STONY SHORE 磐石海岸
+BLAZEWATER BAY 明焰湾
+SALTSPEAR 盐矛滩
+CAPE KRAKEN 海怪角
+SEAGUARD 海疆城
+THE TWINS 孪河城
+GRAYWATER WATCH 灰水望
+IRONMAN’S BAY 铁民湾
+
+IRON ISLANDS 铁群岛
+blacktyde 黑潮岛
+orkmont 奥克蒙岛
+harlaw 哈尔洛岛
+old wyk 老威克岛
+great wyk 大威克岛
+salt cliffe 盐崖岛
+pyke 派克岛
+GREEN FORK 绿叉河
+BLUE FORK 蓝叉河
+RED FORK 红叉河
+tumblestone 腾石河
+riverrun 奔流城
+VALE OF ARRYN 艾林谷
+THE EYRIE 鹰巢城
+BLOODY GATE 血门
+
+THE FINGERS 五指半岛
+THE BITE 咬人湾
+THREE SISTER 三姐妹群岛
+pebble 卵石岛
+THE PAPS 乳头岛
+THE NECK 颈泽
+
+MOAT CALIN 卡林湾
+WHITE HARBOUR 白港
+WHTIE KNIFE 白刃河
+BAY OF SEALS 海豹湾
+WIDOW’S WATCH 寡妇望
+THE FLINT CLIFFS 菲林特悬崖
+FLINT'S FINGER 菲林特之指
+
+
+THREE SISTERS 三姐妹群岛
+THE FINGERS 五指半岛
+pebble 卵石岛
+THE PAPS 乳头岛
+longbow hall 长弓厅
+heart's home 心宿城
+ironoaks 铁橡城
+old anchor 老锚地
+runestone 符石城
+Gulltown 海鸥镇
+THE TWINS 孪河城
+CAPE OF EAGLES 雄鹰角
+seagard 海疆城
+GREENFORK 绿叉河
+KINGSROAD 国王大道
+THE TRDIENT 三叉戟河
+BLUE FORK 蓝叉河
+Oldstones 荒石城
+
+FAIRMARKET 美人市集
+RED FORK 红叉河
+saltpans 盐场镇
+tumblestone 腾石河
+INN OF THE KNEELING MAN 屈膝之栈
+IRON ISLANDS 铁群岛
+blacktyde 黑潮岛
+orkmont 奥克蒙岛
+harlaw 哈尔洛岛
+old wyk 老威克岛
+great wyk 大威克岛
+salt cliffe 盐崖岛
+pyke 派克岛
+IRONMAN'S BAY 铁民湾
+riverrun 奔流城
+high heart 高尚之心
+acorn hall 橡果厅
+pinkmaiden 红粉城
+
+GOLDEN TOOTH 金牙城
+THE CRAG 峭岩城
+ASHMARK 烙印城
+FAIR ISLE 仙女群岛
+faircastle 仙女城
+CASTERLY ROCK 凯岩城
+feastfires 宴火城
+RIVER ROAD 河间大道
+GOLD ROAD 黄金大道
+kayce 凯切镇
+stony sept 石堂镇
+lannisport 兰尼斯港
+lord harroway's town 哈罗威伯爵的小镇
+GOD’EYE 神眼湖
+ISLE OF FACES 千面屿
+HARRENDAL 赫伦堡
+MAIDENPOOL 女泉城
+BAY OF CRABS 螃蟹湾
+CRACKCLAW POINT 蟹爪半岛
+dragonstone 龙石岛
+driftmark 潮头岛
+rosby 罗斯比城
+duskendale 暮谷城
+KING’S LANDING 君临
+ROSE ROAD 玫瑰大道
+MANDER 曼德河
+blackwater RUSH 黑水河
+BLACKEWARER BAY 黑水湾
+the gullet 喉道
+sharp point 尖角
+SILVERHILL 银山城
+CRAKEHALL 秧鸡厅
+OLD OAK 古橡城
+THE REACH 河湾地
+OCEAN ROAD 滨海大道
+BITTERBRIDGE 苦桥
+goldengrove 金树城
+blue byrn 蓝布恩河
+grassy vale 绿谷城
+longtable 长桌堡
+ashford 白杨滩
+cider hall 果酒厅
+cockleswent 舟徙河
+highgarden 高庭
+shield islands 盾牌列岛
+brightwater keep 亮水城
+hornhill 角陵
+nightsong 夜歌城
+honeyholt 蜂巢城
+honeywine 蜂酒河
+old town 旧镇
+three towers 三塔堡
+blackcrown 黑冠城
+whispering sound 低语湾
+KING’S WOOD 御林
+WENDWATER 文德河
+MASSEY'S HOOK 马赛岬
+bronzegate 铜门城
+TARTH 塔斯岛
+evenfall 暮临厅
+storm's end 风息堡
+summerhall 盛夏厅
+blackhaven 黑港
+boneway 骨路
+CAPE WARTH 风怒角
+rainwood 雨林
+estermont 伊斯蒙岛
+mistwood 雾林城
+greenstone 绿石堡
+wyl 维尔城
+blackmont 布莱蒙城
+kingsgrave 王冢城
+yronwood 伊伦伍德城
+prince's pass 亲王隘口
+starfall 星坠城
+sandstone 沙石城
+brimstone 硫磺河
+hellholt 狱门堡
+the scourge 祸江
+the vaith 万斯河
+VAITH 万斯城
+salt shore 盐海岸
+greenblood 绿血河
+lemonwood 柠檬林
+sunspear 阳戟城
+THE TOR 托尔城
+ghosthill 魂丘
+THE BROKEN ARM 断臂角
+THE ARBOR 青亭岛
+
