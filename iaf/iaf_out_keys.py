@@ -3,18 +3,18 @@
 
 import json
 import re
+import sys
 
-f = file('iaf_map_clean.json', 'r')
+f = file(sys.argv[1], 'r')
 personMap = json.load(f)
 
 names = personMap.keys()
-#names = list(set(names))
 print len(names)
 
-cmp=lambda x,y: len(x) - len(y)
-names.sort(cmp)
+#cmp=lambda x,y: len(x) - len(y)
+names.sort()
 
-fout = file('iaf_names.txt', 'w')
+fout = file(sys.argv[2], 'w')
 for n in names:
     s = n.encode('utf-8')
     fout.write(s + '\n') # str(len(n))
