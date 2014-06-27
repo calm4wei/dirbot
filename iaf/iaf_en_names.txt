@@ -40,7 +40,7 @@ Alequo Adarys
 Alesander Frey
 Alesandor Torrent
 Alester Florent
-Alester Oakheart '
+Alester Oakheart
 Alester Sarwyck
 Alfyn Crowkiller
 Alios Qhaedar
@@ -457,7 +457,7 @@ Eddard Karstark
 Eddard Stark
 Edderion Stark
 Eden Risley
-Edgerran Oakheart '
+Edgerran Oakheart
 Edison Tollet
 Edmund Ambrose
 Edmund Blackwood

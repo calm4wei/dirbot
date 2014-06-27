@@ -24,6 +24,10 @@ for p in persons.keys():
         else:
             fnMap[fn] = [n]
 
-        print fn, len(fnMap[fn])
+fout = file('en_first_name_count.txt', 'w')
+for fn in fnMap.keys():
+	s = '%s\t%d' %(fn, len(fnMap[fn]))
+	print s
+	fout.write(s + '\n')
 
 json.dump(fnMap, file('iaf_en_first_names.json', 'w'))
